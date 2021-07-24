@@ -1,0 +1,215 @@
+@media only screen and (max-width: 448px) {
+    .header-first {
+        padding: 20px 0;
+    }
+    .header-second {
+        padding: 20px;
+    }
+    .icon {
+        padding-top: 5px;
+    }
+    .header-second-content {
+        padding-bottom: 20px;
+    }
+    .content-two-first h3 {
+        padding-left: 0px;
+    }
+    .content-two-first {
+        background-color: #2B2C2C;
+    }
+    .content-two-one {
+        padding: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .content-two-second {
+        background-color: #2D2E2E;
+    }
+    .content-two-two {
+        padding: 0;
+        padding-left: 20px;
+        padding-right: 0px;
+        padding-top: 10px;
+    }
+    .content-three-first {
+        background-color: #2B2C2C;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    .content-three-second {
+        padding: 0;
+        padding-left: 40px;
+        padding-right: 10px;
+        padding-top: 20px;
+    }
+    .three-two-one {
+        padding-bottom: 20px;
+    }
+    .three-two-one h1 {
+        padding-bottom: 10px;
+    }
+    .seven-left p {
+        padding-left: 0px;
+    }
+    .seven-left p {
+        padding-left: 0px
+    }
+    .eight-one p {
+        padding-left: 0 px;
+    }
+    .pad-img {
+        padding-left: 0px;
+    }
+    .ten-one p {
+        padding-left: 0px;
+    }
+    .ten-second {
+        padding-right: 0px;
+    }
+    .icon-ten {
+        padding-bottom: 20px;
+    }
+    .icon-ten img {
+        width: 110px;
+        height: 100px;
+    }
+}
+
+@media only screen and (min-width:449px) and (max-width: 767px) {
+    .header-first {
+        padding: 20px 0;
+    }
+    .header-second {
+        padding: 20px;
+    }
+    .icon {
+        padding-top: 5px;
+    }
+    .header-second-content {
+        padding-bottom: 20px;
+    }
+    .content-two-first h3 {
+        padding-left: 0px;
+    }
+    .content-two-first {
+        background-color: #2B2C2C;
+        padding-bottom: 24px;
+    }
+    .content-two-one {
+        padding: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .content-two-second {
+        background-color: #2D2E2E;
+    }
+    .content-two-two {
+        padding: 0;
+        padding-left: 20px;
+        padding-right: 0px;
+        padding-top: 10px;
+    }
+    .seven-left-main {
+        padding-bottom: 24px;
+    }
+    .seven-left p {
+        padding-left: 0px
+    }
+    .eight-one p {
+        padding-left: 0px;
+    }
+    .pad-img {
+        padding-left: 0px;
+    }
+    .nine-second-two img {
+        width: 400px;
+        height: 250px;
+        margin: 0 auto;
+    }
+    .ten-second {
+        padding-right: 20px;
+    }
+    .icon-ten {
+        padding-left: 20px;
+    }
+    .icon-ten img {
+        width: 300px;
+        height: 150px;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width: 991px) {
+    .header-first {
+        padding-bottom: 263px;
+    }
+    .content-two-first h3 {
+        padding-left: 0px;
+    }
+    .content-two-first {
+        background-color: #2B2C2C;
+    }
+    .content-two-one {
+        padding: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .content-two-second {
+        background-color: #2D2E2E;
+    }
+    .content-two-two {
+        padding: 0;
+        padding-left: 20px;
+        padding-right: 0px;
+        padding-top: 10px;
+    }
+    .content-three-first {
+        padding-bottom: 24px;
+    }
+    .seven-left p {
+        padding-left: 0px
+    }
+    .ten-one p {
+        padding-left: 0px;
+    }
+    .footer-first {
+        padding-bottom: 376px;
+    }
+}
+
+@media only screen and (min-width:992px) and (max-width: 1199px) {
+    .content-two-one {
+        padding-left: 100px;
+        padding-bottom: 305px;
+    }
+    .content-three-first {
+        padding-bottom: 55px;
+    }
+    .content-three-second {
+        padding-bottom: 30px;
+    }
+    .content-three-one-four {
+        padding-bottom: 197px;
+    }
+    .seven-left {
+        padding-bottom: 88px;
+    }
+    .eight-first {
+        padding-bottom: 54px;
+    }
+    .eight-one {
+        padding-bottom: 110px;
+    }
+    .nine-first {
+        padding-bottom: 446px;
+    }
+    .ten-first {
+        padding-bottom: 173px;
+    }
+    .ten-second {
+        padding-right: 100px;
+    }
+    .icon-ten {
+        padding-bottom: 40px;
+        padding-left: 20px;
+    }
+}

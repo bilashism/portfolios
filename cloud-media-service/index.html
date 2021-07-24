@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Description goes here">
+    <title>Cloud Media Service - Home</title>
+    <link rel="shortcut icon" href="./img/favicon-16x16.png">
+    <!-- preconnect starts  -->
+    <link rel="preconnect" href="https://use.fontawesome.com">
+    <!-- preconnect ends  -->
+    <!-- noscript starts  -->
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap">
+    </noscript>
+    <noscript>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
+    </noscript>
+    <noscript>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    </noscript>
+    <noscript>
+        <link rel="stylesheet" href="./css/style.css">
+    </noscript>
+    <!-- noscript ends  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" media="print" onload="this.media='all';">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" media="print" onload="this.media='all';">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" media="print" onload="this.media='all';">
+    <link rel="stylesheet" href="./css/style.css" media="print" onload="this.media='all';">
+    <!-- preloader starts  -->
+    <style id="preloader-css">
+        body.loading {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: 0;
+            overflow: hidden;
+            transition: all .5s ease-in-out;
+        }
+        
+        .preloader {
+            position: relative;
+            width: inherit;
+            height: inherit;
+            background-color: #ffffff;
+            z-index: 9999;
+        }
+        
+        .preloader-container {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: auto;
+            filter: url('#goo');
+            animation: rotate-move 2s ease-in-out infinite;
+        }
+        
+        .dot {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: #000;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        
+        .dot-3 {
+            background-color: #f74d75;
+            animation: dot-3-move 2s ease infinite, index 6s ease infinite;
+        }
+        
+        .dot-2 {
+            background-color: #10beae;
+            animation: dot-2-move 2s ease infinite, index 6s -4s ease infinite;
+        }
+        
+        .dot-1 {
+            background-color: #ffe386;
+            animation: dot-1-move 2s ease infinite, index 6s -2s ease infinite;
+        }
+        
+        @keyframes dot-3-move {
+            20% {
+                transform: scale(1)
+            }
+            45% {
+                transform: translateY(-18px) scale(.45)
+            }
+            60% {
+                transform: translateY(-90px) scale(.45)
+            }
+            80% {
+                transform: translateY(-90px) scale(.45)
+            }
+            100% {
+                transform: translateY(0px) scale(1)
+            }
+        }
+        
+        @keyframes dot-2-move {
+            20% {
+                transform: scale(1)
+            }
+            45% {
+                transform: translate(-16px, 12px) scale(.45)
+            }
+            60% {
+                transform: translate(-80px, 60px) scale(.45)
+            }
+            80% {
+                transform: translate(-80px, 60px) scale(.45)
+            }
+            100% {
+                transform: translateY(0px) scale(1)
+            }
+        }
+        
+        @keyframes dot-1-move {
+            20% {
+                transform: scale(1)
+            }
+            45% {
+                transform: translate(16px, 12px) scale(.45)
+            }
+            60% {
+                transform: translate(80px, 60px) scale(.45)
+            }
+            80% {
+                transform: translate(80px, 60px) scale(.45)
+            }
+            100% {
+                transform: translateY(0px) scale(1)
+            }
+        }
+        
+        @keyframes rotate-move {
+            55% {
+                transform: translate(-50%, -50%) rotate(0deg)
+            }
+            80% {
+                transform: translate(-50%, -50%) rotate(360deg)
+            }
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg)
+            }
+        }
+        
+        @keyframes index {
+            0%,
+            100% {
+                z-index: 3
+            }
+            33.3% {
+                z-index: 2
+            }
+            66.6% {
+                z-index: 1
+            }
+        }
+    </style>
+    <script defer id="preloader-js">
+        window.addEventListener('load', () => {
+            const body = document.querySelector('body'),
+                preloaderCss = document.querySelector('#preloader-css'),
+                preloaderJs = document.querySelector('#preloader-js'),
+                preloader = document.querySelector('.preloader');
+            body.classList.remove('loading');
+            body.removeChild(preloader);
+            document.head.removeChild(preloaderCss);
+            document.head.removeChild(preloaderJs);
+        });
+    </script>
+    <!-- preloader ends  -->
+</head>
+
+<body class="loading">
+    <!-- preloader starts  -->
+    <div class="preloader">
+        <div class="preloader-container">
+            <div class="dot dot-1"></div>
+            <div class="dot dot-2"></div>
+            <div class="dot dot-3"></div>
+        </div>
+
+        <svg style="display: none;">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7"/>
+                </filter>
+            </defs>
+        </svg>
+    </div>
+    <!-- preloader ends  -->
+    <!-- navigation starts -->
+    <nav id="main-nav" class="fixed-top bg-white trans-all">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="navbar navbar-expand justify-content-between align-items-center p-0">
+                        <a class="navbar-brand" href="#">
+                            <img loading="lazy" src="./img/cloudmedia-top-logo.jpg" alt="logo" class="img-fluid">
+                        </a>
+                        <div class="d-inline-flex">
+                            <button type="button" class="btn mr-3" data-toggle="modal" data-target="#exampleModal" aria-label="search button">
+                    <i class="fas fa-search"></i>
+                  </button>
+                            <button id="sidebarCollapse" class="navbar-toggler d-inline-block border-0" type="button" aria-label="menu button">
+                    <span class="h3"><i class="fas fa-bars"></i></span>
+            </button>
+                        </div>
+                        <!-- Search Modal starts -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="false">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <form action="" method="post">
+                                    <div class="modal-content bg-dark text-white border-0">
+                                        <div class="modal-header border-0">
+                                            <h5 class="modal-title" id="exampleModalLabel">Search here</h5>
+                                            <button type="button" class="close pt-2" data-dismiss="modal" aria-label="Close">
+                            <span class=" text-white h2" aria-hidden="true">&times;</span>
+                          </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="form-group mb-0">
+                                                <label for="search1" class="d-none">search</label>
+                                                <input type="search" name="search" id="search1" class="form-control" placeholder="Search" aria-describedby="helpId">
+                                                <small id="helpId" class="text-muted d-none">Help text</small>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer border-0">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="submit" class="btn btn-light">Search</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- Search Modal ends -->
+                        <!-- sidebar navigations starts-->
+                        <div id="sidebar" class="position-fixed w-100 min-vh-100 shadow-lg lead sidebar-cus bg-cus-cyan trans-all">
+                            <button id="dismiss" type="button" class="close mr-4" aria-label="Close">
+                                <span class="text-white display-4" aria-hidden="true">&times;</span>
+                            </button>
+                            <div class="bg-theme-clr text-light p-5">
+                                <h2 class="text-white mt-3">Our areas</h2>
+                                <ul class="nav flex-column">
+                                    <li class="nav-item cus-bdr-rds">
+                                        <a class="nav-link" href="omrader/innsikt-og-analyse/index.html">
+                                            <span class="glyphicon"></span> Insight and analysis
+                                        </a>
+                                    </li>
+                                    <li class="nav-item cus-bdr-rds">
+                                        <a class="nav-link" href="omrader/innhold/index.html">
+                                            <span class="glyphicon"></span> Contents
+                                        </a>
+                                    </li>
+                                    <li class="nav-item cus-bdr-rds">
+                                        <a class="nav-link" href="omrader/spredning/index.html">
+                                            <span class="glyphicon"></span> Spreading
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="p-5">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item cus-bdr-rds">
+                                        <a class="nav-link" href="kurs/index.html">Course</a>
+                                    </li>
+                                    <li class="nav-item cus-bdr-rds">
+                                        <a class="nav-link" href="seminarer/index.html">Seminar</a>
+                                    </li>
+                                    <li class="nav-item cus-bdr-rds">
+                                        <a class="nav-link" href="prosjekter/index.html">Project</a>
+                                    </li>
+                                    <li class="nav-item cus-bdr-rds">
+                                        <a class="nav-link" href="om-oss/index.html">About Us</a>
+                                    </li>
+                                    <li class="nav-item cus-bdr-rds">
+                                        <a class="nav-link" href="blogg/index.html">Blog</a>
+                                    </li>
+                                    <li class="nav-item cus-bdr-rds">
+                                        <a class="nav-link" href="kontakt/index.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- sidebar navigations ends -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navigation ends -->
+    <main id="main" class="pb-5 position-relative min-vh-100">
+        <div class="container pt-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 text-center">
+                    <h1 class="fluid-big font-weight-bold py-5 px-lg-5 cus-line-h">We make you good</h1>
+                    <p class="h2 text-warning mb-0">Cloud Media are content marketing experts. <br> We deliver accurate content</p>
+                    <p class="h2 text-warning">
+                        which
+                        <span class="cd-headline clip">
+                            <span class="cd-words-wrapper">
+                                <b class="is-visible">Text 1</b>
+                                <b>Text 2</b>
+                                <b>Text 3</b>
+                                <b>Text 4</b>
+                                <b>Text 5</b>
+                            </span>
+                        </span>
+                    </p>
+                    <p class="pt-5">
+                        <a class="btn btn-lg text-dark py-3 px-5 bg-cus-cyan border-0 cus-bdr-rds trans-all shadow" href="./index.html">Our areas</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="svg-bg position-absolute d-none d-md-flex">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 870.55256 714.56767">
+                <path d="M814.72372,417.71616c244.26843,256.64905,448.55811,512.64612-325,325-174.43384-42.31335-325-145.50745-325-325s145.50746-325,325-325S690.97805,287.69852,814.72372,417.71616Z" transform="translate(-164.72372 -92.71616)" fill="#3f3d56"/><path d="M591.72372,641.71616h-265a9.01016,9.01016,0,0,1-9-9v-423a9.01047,9.01047,0,0,1,9-9h265a9.01016,9.01016,0,0,1,9,9v35h6v21h-6v7h6v21h-6v339A9.00984,9.00984,0,0,1,591.72372,641.71616Zm-265-439a7.00787,7.00787,0,0,0-7,7v423a7.00818,7.00818,0,0,0,7,7h265a7.00849,7.00849,0,0,0,7-7v-341h6v-17h-6v-11h6v-17h-6v-37a7.00818,7.00818,0,0,0-7-7Z" transform="translate(-164.72372 -92.71616)" fill="#6c63ff"/><path d="M575.22372,619.21616h-232v-396h232Zm-230-2h228v-392h-228Z" transform="translate(-164.72372 -92.71616)" fill="#6c63ff"/><rect x="271" y="119" width="48" height="2" fill="#6c63ff"/><path d="M413.72372,286.71616" transform="translate(-164.72372 -92.71616)" fill="none" stroke="#6c63ff" stroke-miterlimit="10" stroke-width="2"/><rect x="247" y="225" width="94" height="10" fill="#d0cde1"/><path d="M424.14773,529.56227a17.5185,17.5185,0,1,1,17.5185-17.5185A17.53844,17.53844,0,0,1,424.14773,529.56227Zm0-33.19295a15.67445,15.67445,0,1,0,15.67445,15.67445A15.692,15.692,0,0,0,424.14773,496.36932Z" transform="translate(-164.72372 -92.71616)" fill="#d0cde1"/><polygon class="tick" points="259.67 425.87 250.744 416.943 253.352 414.336 259.178 420.161 275.434 397.059 278.451 399.183 259.67 425.87" fill="#33ae84"/><path d="M493.29971,529.56227a17.5185,17.5185,0,1,1,17.5185-17.5185A17.53843,17.53843,0,0,1,493.29971,529.56227Zm0-33.19295a15.67445,15.67445,0,1,0,15.67445,15.67445A15.692,15.692,0,0,0,493.29971,496.36932Z" transform="translate(-164.72372 -92.71616)" fill="#d0cde1"/><polygon points="336.874 413.654 334.263 411.05 328.576 416.755 322.889 411.05 320.278 413.654 325.972 419.366 320.355 425.001 322.966 427.605 328.576 421.978 334.186 427.605 336.797 425.001 331.18 419.366 336.874 413.654" fill="#ff6584"/><rect x="107.55322" y="547" width="727.44678" height="2" fill="#6c63ff"/><circle cx="108" cy="548" r="14" fill="#6c63ff"/><circle cx="841" cy="548" r="14" fill="#6c63ff"/><path d="M956.40179,641.21005l-1.26717-.47505c-.27846-.10492-27.99252-10.72311-40.975-34.79938-12.983-24.07743-6.62585-53.06673-6.56012-53.35614l.29921-1.32021,1.26659.47505c.27846.10492,27.99194,10.72311,40.975,34.79938,12.983,24.07743,6.62584,53.06673,6.56012,53.35614Zm-40.16325-36.39517c10.9762,20.35662,32.87672,30.79148,38.42564,33.17362,1.055-5.94729,4.36362-29.997-6.60278-50.33406-10.96525-20.33471-32.87442-30.78571-38.42564-33.17362C908.58016,560.43157,905.27272,584.479,916.23854,604.81488Z" transform="translate(-164.72372 -92.71616)" fill="#6c63ff"/><path d="M924.08125,597.49005c23.33121,14.03683,32.3168,41.91784,32.3168,41.91784s-28.84178,5.12281-52.173-8.914-32.3168-41.91784-32.3168-41.91784S900.75,583.45322,924.08125,597.49005Z" transform="translate(-164.72372 -92.71616)" fill="#d0cde1"/><path d="M626.22372,281.21616l-4,26-18,70s-23,30-3,36,17-35,17-35l25-50v-45Z" transform="translate(-164.72372 -92.71616)" fill="#a0616a"/><polygon points="533.5 467.5 542.5 484.5 521.5 495.5 513.5 479.5 533.5 467.5" fill="#a0616a"/><path d="M678.22372,579.21616s16-2,19,0,5-9,10-7,19,19,16,21-16,26-16,26-14,34-26,28-3-37-3-37Z" transform="translate(-164.72372 -92.71616)" fill="#2f2e41"/><polygon points="555.5 523.5 552.5 556.5 526.5 552.5 536.5 521.5 555.5 523.5" fill="#a0616a"/><path d="M691.22372,636.21616l6,3s9-15,16-7,9,7,9,7l13,29s18,29-6,29-27-11-27-11-13-9-13-14S691.22372,636.21616,691.22372,636.21616Z" transform="translate(-164.72372 -92.71616)" fill="#2f2e41"/><path d="M737.22372,347.21616s5,26,4,42-8,120-8,120l-8,117-34-3,3-112-11-81-19,67-41,3s-8-99,7-110S737.22372,347.21616,737.22372,347.21616Z" transform="translate(-164.72372 -92.71616)" fill="#2f2e41"/><path d="M658.22372,487.21616l6,10s23,23,26,35,17,31,17,31l-30,16s-59-69-54-79Z" transform="translate(-164.72372 -92.71616)" fill="#2f2e41"/><circle cx="518.5" cy="58.5" r="28" fill="#a0616a"/><path d="M693.22372,170.21616s-1,21,14,25-24,24-24,24-30,1-28-14l7-6-1-38Z" transform="translate(-164.72372 -92.71616)" fill="#a0616a"/><path d="M700.72372,190.71616s-21.51195,23.93882-40.506,10.21941c0,0-35.994,16.28059-34.994,35.28059s15,49,15,49l-3,66s-34,43-12,45,68-1,92-32c0,0,23,6,23-4v-64l8-88Z" transform="translate(-164.72372 -92.71616)" fill="#d0cde1"/><path d="M636.22372,224.21616s-8.95993,1.29312-10.98,10.14656-3.02,54.85344-3.02,54.85344h24Z" transform="translate(-164.72372 -92.71616)" fill="#d0cde1"/><polygon points="599.5 173.5 605.5 220.5 574.5 284.5 570.5 301.5 562 275 578.5 217.5 569.5 179.5 599.5 173.5" fill="#a0616a"/><path d="M710.909,126.80221l1.84668-4.14084-3.24538-.29142.82977-3.87088-4.1387,2.85711a8.45479,8.45479,0,0,0-1.40931-8.07189,16.14879,16.14879,0,0,0-6.92189-4.88069,30.88258,30.88258,0,0,0-31.69068,5.53874l-.299-1.16536a40.22081,40.22081,0,0,0-15.36143,26.62017c-1.32446,10.43545,3.68865,21.061,10.20464,29.319-.66513-4.36991-1.84927-8.65485.25176-12.54383a41.04774,41.04774,0,0,1,2.65038-4.09326l5.31426-7.53511c3.05358-4.32969,6.68412-9.02952,11.92635-9.79745a19.62468,19.62468,0,0,1,4.37817.01687c6.44412.50666,13.34788,1.81893,19.80131,1.54009,5.26118-.22732,6.855-4.15652,8.34555-8.96073A17.5267,17.5267,0,0,0,710.909,126.80221Z" transform="translate(-164.72372 -92.71616)" fill="#2f2e41"/><polygon points="573.5 117.5 583.5 115.5 605.5 177.5 565.5 186.5 573.5 117.5" fill="#d0cde1"/><rect x="217" y="265.28384" width="154" height="7.84615" fill="#d0cde1"/><rect x="217.27628" y="288.8223" width="154" height="7.84615" fill="#d0cde1"/><rect x="217.55256" y="312.36076" width="154" height="7.84615" fill="#d0cde1"/><rect x="217.82884" y="335.89922" width="154" height="7.84615" fill="#d0cde1"/><rect x="218.10512" y="359.43768" width="154" height="7.84615" fill="#d0cde1"/></svg>
+        </div>
+    </main>
+    <section class="cards py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="card-item shadow-sm position-relative">
+                        <figure class="banner">
+                            <a href="">
+                                <img loading="lazy" src="./img/card-1.jpg" class="img-fluid" alt="alt">
+                            </a>
+                        </figure>
+                        <div class="caption position-absolute w-100 btm-1">
+                            <h2 class="p-3 mb-0">Card label</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card-item shadow-sm position-relative">
+                        <figure class="banner">
+                            <a href="">
+                                <img loading="lazy" src="./img/card-2.jpg" class="img-fluid" alt="alt">
+                            </a>
+                        </figure>
+                        <div class="caption position-absolute w-100 btm-1">
+                            <h2 class="p-3 mb-0">Card label</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card-item shadow-sm position-relative">
+                        <figure class="banner">
+                            <a href="">
+                                <img loading="lazy" src="./img/card-3.png" class="img-fluid" alt="alt">
+                            </a>
+                        </figure>
+                        <div class="caption position-absolute w-100 btm-1">
+                            <h2 class="p-3 mb-0">Card label</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card-item shadow-sm position-relative">
+                        <figure class="banner">
+                            <a href="">
+                                <img loading="lazy" src="./img/card-4.jpg" class="img-fluid" alt="alt">
+                            </a>
+                        </figure>
+                        <div class="caption position-absolute w-100 btm-1">
+                            <h2 class="p-3 mb-0">Card label</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="card-item shadow-sm position-relative">
+                        <figure class="banner">
+                            <a href="">
+                                <img loading="lazy" src="./img/card-full.jpg" class="img-fluid" alt="alt">
+                            </a>
+                        </figure>
+                        <div class="caption position-absolute w-100 btm-1">
+                            <h2 class="p-3 mb-0">Card label</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- cards section ends -->
+    <!-- contact us section starts -->
+    <section class="contact py-5 bg-light">
+        <div class="container pt-4">
+            <div class="row justify-content-between">
+                <div class="col-md-6 order-lg-12">
+                    <figure class="pb-4 text-md-center">
+                        <img loading="lazy" src="./img/bottom-card.jpg" class="img-fluid cus-side-shadow" alt="alt">
+                    </figure>
+                </div>
+                <div class="col-md-6 align-self-md-center">
+                    <h2 class="text-capitalize pb-3">contact us</h2>
+                    <p class="lead mb-0">Need help creating content, analysis or pricing and design?
+                    </p>
+                    <div class="info lead py-4">
+                        <p class="text-capitalize mb-0">berit wattne</p>
+                        <p class="text-uppercase mb-0">ceo</p>
+                        <p class="mb-0"><a href="tel:+45484" class="text-underline">+45484</a></p>
+                    </div>
+                    <p><a href="mailto:berit.wattne@cloudmedia.no">berit.wattne@cloudmedia.no</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact us section ends -->
+    <!-- footer section starts -->
+    <footer class="footer py-5 bg-cus-warn">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-12">
+                    <h2 class="text-capitalize pb-3">contact</h2>
+                </div>
+                <div class="col-md-4">
+                    <p class="mb-0">Cloud Media Service AS</p>
+                    <p>
+                        <a href="" class="text-underline ">Kongens gate 6, 0153 Oslo</a>
+                    </p>
+                    <p class="mb-0">
+                        <a href="" class="text-underline  ">Nearest parking</a>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p class="mb-0"><a href="mailto:hei@cloudmedia.no " class="text-underline  ">hei@cloudmedia.no </a></p>
+                    <p>
+                        <a href="telto:+784515154" class="text-underline  ">+784515154</a>
+                    </p>
+                    <p class="mb-0">
+                        <a href="" class="text-underline  ">Privacy</a>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex justify-content-between align-items-center pt-3 pt-md-0">
+                        <a href="" class="text-dark">
+                            <img loading="lazy" src="./img/cloudmedia-top-logo.jpg" alt="logo" class="img-fluid">
+                        </a>
+                        <a href="" class="lead  " aria-label="facebook link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="" class="lead  ">
+                            <i class="fab fa-linkedin" aria-label="linkedin link"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section ends -->
+
+    <script defer src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script defer src="./js/main.js"></script>
+</body>
+
+</html>
