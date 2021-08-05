@@ -1,8 +1,5 @@
 # Ignore files and folders here
-.gitignore
 gulpfile.js
-package.json
-package-lock.json
 # folders
 node_modules
 src
