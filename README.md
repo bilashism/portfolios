@@ -1,8 +1,3 @@
-<style>
-    h1>a{
-        display:none;
-    }
-</style>
 <h2 align="center"> Hi there 👋,</h2>
 
 # I'm Md. Taifuzzaman Bilash
